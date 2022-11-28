@@ -21,16 +21,16 @@ const {check, validationResult} = require('express-validator')
 app.use(express.static('mrssFiles'));
 
 
-// app.use(function(req, res, next) {
+app.use(function(req, res, next) {
 
 
-//   res.header("Access-Control-Allow-Origin","https://viralbear.media"); // update to match the domain you will make the request from
-//       res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//       next();
+  res.header("Access-Control-Allow-Origin","http://f0731304.xsph.ru"); // update to match the domain you will make the request from
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      next();
   
 
   
-//   });
+  });
 
 
 
