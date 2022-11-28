@@ -34,6 +34,10 @@ app.use(express.static('mrssFiles'));
 
 
 
+app.use(express.static(path.join(__dirname, 'build')))
+
+
+
 
 
 
